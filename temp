@@ -1,0 +1,21 @@
+import math
+
+
+temperature = input('What is the temperature today?: ')
+temperature = int(temperature)
+in_what = input('is that celcius or fahrenheit?: ')
+
+fahrenheit = temperature * 9/5 + 32
+
+celcius = (temperature - 32) * 5/9
+
+c = celcius
+f = fahrenheit
+
+def temp_converter(temperature):
+ if in_what != celcius:
+  print(f'it is {temperature} degrees! That is {c} in fahrenheit!')
+ else:
+  print(f'it is {temperature} degrees! That is {c} degrees in celcius')
+
+temp_converter(temperature)
