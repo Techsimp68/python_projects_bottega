@@ -1,0 +1,16 @@
+class_size = input('How many students?: ')
+class_size = int(class_size)
+
+class_members = input('Who will be in class?: ')
+class_members = class_members.split(' ')
+class_attendents = [] 
+
+for i in range(0, class_size):
+  class_attendents.append(class_members)
+
+
+def list_loop(class_attendents):
+  for students in class_members:
+    print(f'Hello {students}!')
+
+list_loop(class_attendents)
