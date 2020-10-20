@@ -1,0 +1,19 @@
+import math
+
+
+
+def fizzbuzz(starting_num, max_num):
+ for nums in range(starting_num,max_num):
+  if nums % 3 == 0 and nums % 5 == 0:
+    print('FizzBuzz')
+    continue
+  if nums % 5 == 0:
+    print('Buzz')
+    continue
+  elif nums % 3 == 0:
+    print('Fizz')
+    continue
+  print(nums)
+ return
+
+fizzbuzz(1,100)
