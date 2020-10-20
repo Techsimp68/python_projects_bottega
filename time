@@ -1,0 +1,11 @@
+import time
+this_time_here={}
+
+def time_homework(this_time_here):
+ seconds = time.time()
+ local_time = time.ctime(seconds)
+ print("Seconds since epoch =", seconds)
+ print("Local time:", local_time)
+ print(f'Hello, the time and date there is {local_time} have a good day')
+
+time_homework(this_time_here)
